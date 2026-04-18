@@ -1,45 +1,32 @@
-## 🚀 GitOps-Based Deployment Overview
+🚀 GitOps-Based Deployment Overview
 
-This project follows the **GitOps** methodology, a modern approach to managing infrastructure and application deployments using Git as the single source of truth.
+This project follows the GitOps methodology, a modern approach to managing infrastructure and application deployments using Git as the single source of truth.
 
-### 📌 What is GitOps?
+📌 What is GitOps?
 
 GitOps is a practice where all infrastructure and application configurations are defined declaratively and stored in a Git repository. Instead of manually applying changes to the system, updates are made through Git commits, ensuring consistency, traceability, and version control.
 
-### ⚙️ How It Works
+⚙️ How It Works
+Application and infrastructure configurations are written as declarative YAML manifests
+These manifests are stored and versioned in a Git repository
+A GitOps controller continuously monitors the repository
+Whenever changes are pushed, the controller automatically applies them to the system
+It also ensures that the actual system state always matches the desired state defined in Git
+🧩 Core Principles
+Declarative Configuration
+The entire system state is defined using declarative files
+Version Control
+Every change is tracked in Git, providing a complete history and audit trail
+Automated Deployment (Pull-Based)
+Changes are automatically pulled and applied by the system
+Continuous Reconciliation
+The system constantly checks and corrects any drift between actual and desired states
+🎯 Benefits
+Improved Security – Eliminates unauthorized manual changes
+Traceability – Full history of changes through Git commits
+Consistency – Ensures environments remain identical
+Auto-Healing – Automatically fixes configuration drift
+Simplified Rollbacks – Easily revert to previous stable states
+🌍 Use Case
 
-* Application and infrastructure configurations are written as **declarative YAML manifests**.
-* These manifests are stored and versioned in a Git repository.
-* A GitOps controller continuously monitors the repository.
-* Whenever changes are pushed, the controller automatically applies them to the system.
-* It also ensures that the actual system state always matches the desired state defined in Git.
-
-### 🧩 Core Principles
-
-* **Declarative Configuration**
-  The entire system state is defined using declarative files.
-
-* **Version Control**
-  Every change is tracked in Git, providing a complete history and audit trail.
-
-* **Automated Deployment (Pull-Based)**
-  Changes are automatically pulled and applied by the system.
-
-* **Continuous Reconciliation**
-  The system constantly checks and corrects any drift between actual and desired states.
-
-### 🎯 Benefits
-
-* **Improved Security** – Eliminates unauthorized manual changes
-* **Traceability** – Full history of changes through Git commits
-* **Consistency** – Ensures environments remain identical
-* **Auto-Healing** – Automatically fixes configuration drift
-* **Simplified Rollbacks** – Easily revert to previous stable states
-
-### 🌍 Use Case
-
-This approach is particularly effective for managing **containerized applications and infrastructure**, especially in Kubernetes environments, but the core principles can be applied to other systems as well.
-
----
-
-This project demonstrates how GitOps can be used to achieve reliable, automated, and scalable deployments by leveraging Git as the central control mechanism.
+This approach is particularly effective for managing containerized applications and infrastructure, especially in Kubernetes environments, but the core principles can be applied to other systems as well.
