@@ -12,21 +12,26 @@ These manifests are stored and versioned in a Git repository
 A GitOps controller continuously monitors the repository
 Whenever changes are pushed, the controller automatically applies them to the system
 It also ensures that the actual system state always matches the desired state defined in Git
+
 🧩 Core Principles
-Declarative Configuration
+1. Declarative Configuration
 The entire system state is defined using declarative files
-Version Control
+
+2. Version Control
 Every change is tracked in Git, providing a complete history and audit trail
-Automated Deployment (Pull-Based)
+
+3.Automated Deployment (Pull-Based)
 Changes are automatically pulled and applied by the system
-Continuous Reconciliation
+
+4. Continuous Reconciliation
 The system constantly checks and corrects any drift between actual and desired states
+
 🎯 Benefits
 Improved Security – Eliminates unauthorized manual changes
 Traceability – Full history of changes through Git commits
 Consistency – Ensures environments remain identical
 Auto-Healing – Automatically fixes configuration drift
 Simplified Rollbacks – Easily revert to previous stable states
-🌍 Use Case
 
+🌍 Use Case
 This approach is particularly effective for managing containerized applications and infrastructure, especially in Kubernetes environments, but the core principles can be applied to other systems as well.
