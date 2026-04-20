@@ -38,7 +38,6 @@ Key responsibilities:
   - Plain YAML/JSON
   - Helm charts
   - Kustomize
-  - Jsonnet
   - Custom plugins
 - Caching repository content for performance
 - Performing security scanning and template rendering
