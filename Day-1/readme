@@ -34,4 +34,4 @@ Auto-Healing – Automatically fixes configuration drift
 Simplified Rollbacks – Easily revert to previous stable states
 
 🌍 Use Case
-This approach is particularly effective for managing containerized applications and infrastructure, especially in Kubernetes environments, but the core principles can be applied to other systems as well.
+This approach is particularly effective for managing containerized applications and infrastructure, especially in Kubernetes environments, but the core principles can be applied to other systems as well
