@@ -4,7 +4,7 @@ This project follows the GitOps methodology, a modern approach to managing infra
 
 📌 What is GitOps?
 
-GitOps is a practice where all infrastructure and application configurations are defined declaratively and stored in a Git repository. Instead of manually applying changes to the system, updates are made through Git commits, ensuring consistency, traceability, and version control.
+GitOps is a practice where all infrastructure and application configurations are defined declaratively and stored in a Git repository. Instead of manually applying changes to the system, updates are made through Git commits, ensuring consistency, traceability, and version control
 
 ⚙️ How It Works
 Application and infrastructure configurations are written as declarative YAML manifests
