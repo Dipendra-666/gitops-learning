@@ -90,7 +90,7 @@ Dex runs as a separate deployment and is optional if using local users or other 
 6. **Redis** ensures high performance and caching
 7. **Dex** handles secure user authentication
 
-This creates a fully declarative, auditable, and automated deployment pipeline.
+This creates a fully declarative, auditable, and automated deployment pipeline
 
 ---
 
